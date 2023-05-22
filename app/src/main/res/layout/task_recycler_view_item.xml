@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    android:background="@drawable/round_corner"
+    android:backgroundTint="@color/background"
+    android:padding="5dp"
+    >
+
+
+    <TextView
+        android:id="@+id/taskRecyclerViewItem_title"
+        android:layout_width="wrap_content"
+        android:layout_height="37sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="7dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/disabled"
+        android:hint="Text title :"
+        android:paddingVertical="5sp"
+        android:paddingHorizontal="10sp"
+        android:textAlignment="center"
+        android:textColor="@color/button"
+        android:textSize="20sp"
+        android:textStyle="bold|italic|normal" />
+
+    <TextView
+        android:id="@+id/taskRecyclerViewItem_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taskRecyclerViewItem_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="7dp"
+        android:padding="5sp"
+        android:hint="Task description :"
+        android:textAlignment="center"
+        android:textColor="@color/button"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/disabled"
+        android:minLines="3"
+        android:maxLines="3"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:id="@+id/taskRecyclerViewItem_dateLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taskRecyclerViewItem_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="7dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/taskRecyclerViewItem_dateLinearLayout_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="10sp"
+            android:textColor="@color/button"
+            android:textAlignment="center"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/disabled"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:text="-"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/taskRecyclerViewItem_dateLinearLayout_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:layout_marginHorizontal="5sp"
+            android:textColor="@color/button"
+            android:textAlignment="center"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/disabled"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:text="-"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/taskRecyclerViewItem_dateLinearLayout_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="10sp"
+            android:textColor="@color/button"
+            android:textAlignment="center"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/disabled"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/taskRecyclerViewItem_dateLinearLayout_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="5sp"
+            android:textColor="@color/button"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/disabled"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:text=":"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/taskRecyclerViewItem_dateLinearLayout_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5sp"
+            android:textColor="@color/button"
+            android:textAlignment="center"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/disabled"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/taskRecyclerViewItem_dateLinearLayout_AMPM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="5sp"
+            android:textColor="@color/button"
+            android:textAlignment="center"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/disabled"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/taskEditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/taskRecyclerViewItem_title"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/ic_new_task_background"
+        android:contentDescription="Task Edit Button"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:foreground="@drawable/ic_task_edit"
+        android:foregroundTint="@color/black"
+        android:translationY="-8dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/taskValidateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/ic_new_task_background"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:layout_toLeftOf="@id/taskEditButton"
+        android:layout_alignTop="@id/taskRecyclerViewItem_title"
+        android:foreground="@drawable/ic_task_validate"
+        android:foregroundTint="@color/black"
+        android:translationY="-8dp"
+        android:contentDescription="Task Done Button" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/taskExtendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/taskRecyclerViewItem_dateLinearLayout"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/ic_new_task_background"
+        android:contentDescription="Task Extend Button"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:foreground="@drawable/ic_task_extend"
+        android:foregroundTint="@color/black"
+        android:translationY="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskLateIcon"
+        android:src="@drawable/ic_task_late"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10sp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

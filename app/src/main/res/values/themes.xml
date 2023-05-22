@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PlanifyIt" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+        <!-- Customize the background color -->
+        <item name="android:background">@color/background</item>
+        <!-- Customize the text color -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!-- Customize the selected date color -->
+        <item name="android:datePickerMode">spinner</item>
+        <!-- ... other customization attributes ... -->
+    </style>
+
+    <style name="Theme.PlanifyIt" parent="Base.Theme.PlanifyIt" />
+</resources>

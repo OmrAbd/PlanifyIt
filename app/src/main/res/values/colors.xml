@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#F2CE02</color>
+    <color name="disabled">#3A3A3A</color>
+    <color name="button">#F1CD02</color>
+    <color name="validate_icon">#00AB2E</color>
+    <color name="bad">#FF0000</color>
+</resources>
